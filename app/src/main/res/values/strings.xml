@@ -6,4 +6,13 @@
     <string name="email">Email</string>
     <string name="accept_terms_and_conditions">Accept Terms And Conditions</string>
     <string name="notifications">Notifications</string>
+    <string name="login">LOGIN</string>
+    <string name="pass">Password</string>
+
+    <array name="data">
+        <item>"Oreo"</item>
+        <item>"Cupcake"</item>
+        <item>"Lollipop"</item>
+        <item>"Android Versions"</item>
+    </array>
 </resources>
