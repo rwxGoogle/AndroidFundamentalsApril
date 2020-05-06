@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayout"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:id="@+id/title_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginDimenLarge"
+        android:layout_marginTop="@dimen/marginDimenLarge"
+        android:layout_marginEnd="@dimen/marginDimenLarge"
+        android:background="@color/colorYellow"
+        android:gravity="center"
+        android:padding="@dimen/paddingDimenMedium"
+        android:text="@string/title"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/textDimenSmall"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/title_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginDimenLarge"
+        android:background="@color/colorYellow"
+        android:gravity="center"
+        android:padding="@dimen/paddingDimenMedium"
+        android:text="@string/title_register"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/textDimenSmall"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorOrange"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginDimenLarge"
+        android:background="@color/colorOrange"
+        android:padding="@dimen/paddingDimenMedium"
+        android:text="@string/next" />
+
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:padding="@dimen/paddingDimenMedium"
+        android:textColor="@color/colorGreen"
+        android:textColorHint="@color/colorPrimary" />
+
+    <CheckBox
+        android:id="@+id/acceptTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginDimenLarge"
+        android:text="@string/accept_terms_and_conditions" />
+
+    <Switch
+        android:id="@+id/notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginDimenLarge"
+        android:drawablePadding="@dimen/paddingDimenMedium"
+        android:padding="@dimen/paddingDimenMedium"
+        android:text="@string/notifications" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="3"
+        android:stepSize="1.5" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_button_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radio_button_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginDimenLarge">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginDimenLarge"
+            android:text="Hide/Show progress" />
+    </LinearLayout>
+
+</LinearLayout>
