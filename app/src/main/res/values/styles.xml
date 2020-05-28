@@ -3,9 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorOrange</item>
+        <item name="colorPrimaryDark">@color/colorYellow</item>
+        <item name="colorAccent">@color/colorYellow</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,5 +16,21 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SampleTestButtonStyle">
+        <item name="android:textSize">@dimen/textDimenBig</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:layout_margin">@dimen/marginDimenLarge</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">Title</item>
+    </style>
+
+    <style name="AndroidFundamentalsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/colorOrange</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="colorPrimary">@color/colorYellow</item>
+        <item name="colorPrimaryDark">@color/colorGreen</item>
+    </style>
 
 </resources>

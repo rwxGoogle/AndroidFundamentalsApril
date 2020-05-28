@@ -3,6 +3,7 @@
     package="com.whirlpool.androidfundamentalsapril">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".tab.TabActivity"/>
         <activity
             android:name=".navigation.NavigationActivity"
             android:label="@string/title_activity_navigation"
@@ -28,9 +30,8 @@
         <activity android:name=".SecondActivityWeek5" />
         <activity android:name=".week6.Week6Activity" />
         <activity
-            android:name=".tab.TabActivity"
-            android:label="@string/title_activity_tab"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".MainActivityWeek7"
+            android:label="@string/title_activity_tab">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
