@@ -27,14 +27,20 @@ public class RetrofitMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_retofit_main_activity);
 
         PersonApi api = getRetrofit().create(PersonApi.class);
-        Call<List<User>> persons = api.getPersons("test_json1");
+        Call<List<User>> persons = api.getPersons("test_json2");
         persons.enqueue(new Callback<List<User>>() {
             @Override
             public void onResponse(Call<List<User>> call, Response<List<User>> response) {
                 if (response.isSuccessful()) {
                     Log.d("Response", response.body().toString());
-                } else {
 
+                    List<User> users = response.body();
+
+                    for (User user : users) {
+                        Log.d("Response", "Username= " + user.getName());
+                    }
+
+                } else {
                     Log.d("Response", "Response code " + response.code());
                 }
             }
