@@ -30,8 +30,10 @@
         <activity android:name=".SecondActivityWeek5" />
         <activity android:name=".week6.Week6Activity" />
         <activity android:name=".MainActivityWeek7" />
+        <activity android:name=".week8.RetrofitMainActivity" />
+        <activity android:name=".week9.SharedPrefActivity" />
         <activity
-            android:name=".week8.RetrofitMainActivity"
+            android:name=".week9.RoomActivity"
             android:label="@string/title_activity_tab">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
